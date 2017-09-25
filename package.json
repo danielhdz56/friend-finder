@@ -1,0 +1,28 @@
+{
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielhdz56/friend-finder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielhdz56/friend-finder/issues"
+  },
+  "homepage": "https://github.com/danielhdz56/friend-finder#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.15.5",
+    "hbs": "^4.0.1",
+    "mysql": "^2.14.1",
+    "path": "^0.12.7",
+    "socket.io": "^2.0.3"
+  }
+}
