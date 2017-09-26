@@ -44,7 +44,6 @@ socket.on('connect', function () {
             });
 
             socket.on('surveyResults', function(results) {
-                console.log('results', results);
                 $("#matchName").text(results.name);
                 $('#matchImg').attr("src", results.photo);
 
