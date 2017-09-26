@@ -4,12 +4,16 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const mysql = require('mysql');
 
-const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'password',
-    database: 'surveyDB'
-});
+
+var env = process.env.NODE_ENV || "development";
+var config = require(__dirname + "/config.json")[env];
+
+
+if(config.use_env_variable) {
+    var connection = mysql.createConnection(process.env[config.use_env_variable]);
+} else {
+    var connection = mysql.createConnection(config);
+}
 
 const port = process.env.PORT || 3000;
 var app = express();
