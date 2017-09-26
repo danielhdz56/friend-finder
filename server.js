@@ -4,10 +4,8 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const mysql = require('mysql');
 
-
 var env = process.env.NODE_ENV || "development";
 var config = require("./config.json")[env];
-
 
 if(config.use_env_variable) {
     var connection = mysql.createConnection(process.env[config.use_env_variable]);
