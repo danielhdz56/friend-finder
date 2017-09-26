@@ -6,7 +6,7 @@ const mysql = require('mysql');
 
 
 var env = process.env.NODE_ENV || "development";
-// var config = require(__dirname + "/config.json")[env];
+var config = require(__dirname + "/config.json")[env];
 
 
 if(config.use_env_variable) {
