@@ -1,0 +1,13 @@
+{
+    "development": {
+        "user": "root",
+        "password": "password",
+        "database": "surveyDB",
+        "host": "localhost",
+        "port": "3306"
+    },
+    "production": {
+        "use_env_variable": "JAWSDB_URL",
+        "dialect": "mysql"
+    }
+}
